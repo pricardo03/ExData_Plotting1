@@ -17,7 +17,7 @@ datetime <- paste(as.Date(DataPeriod$Date), DataPeriod$Time)
 DataPeriod$Datetime <- as.POSIXct(datetime)
 
 #use type= L to create line 
-plot(DataPeriod$Global_active_power~DataPeriod$Datetime, ylab="Global Active Power (kilowatts)", xlab="", type="s")
+plot(DataPeriod$Global_active_power~DataPeriod$Datetime, ylab="Global Active Power (kilowatts)", xlab="", type="l")
 
 #save into a png file from screen
 dev.copy(png, file="plot2.png", height=480, width=480)
