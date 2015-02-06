@@ -8,7 +8,7 @@ PowerConsumption <- read.csv("household_power_consumption.txt", header = T, sep=
 PowerConsumption$Date <- as.Date(PowerConsumption$Date, format="%d/%m/%Y")
 
 #get only two days
-DataPeriod <- subset(PowerConsumption, subset(Date>= "2007-02-01" & Date<="2007-02-02"))
+DataPeriod <- subset(PowerConsumption, subset=(Date>= "2007-02-01" & Date<="2007-02-02"))
 #deallocating resources
 rm(PowerConsumption)
 
