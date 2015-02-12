@@ -20,5 +20,5 @@ DataPeriod$Datetime <- as.POSIXct(datetime)
 plot(DataPeriod$Global_active_power~DataPeriod$Datetime, ylab="Global Active Power (kilowatts)", xlab="", type="l")
 
 #save into a png file from screen
-dev.copy(png, file="plot2.png", height=480, width=480)
+dev.copy(png, file="plot2.png", height=480, width=480, units = "px", bg = "transparent")
 dev.off()
