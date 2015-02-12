@@ -13,7 +13,9 @@ DataPeriod <- subset(PowerConsumption, subset=(Date>= "2007-02-01" & Date<="2007
 rm(PowerConsumption)
 
 #Create png file
-png(file="plot1.png")
+png(file="plot1.png", 
+    width = 480, height = 480, 
+    units = "px", bg = "transparent")
 
 #Show de plot
 hist(DataPeriod$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power(kilowatts)", ylab="Frecuency")
