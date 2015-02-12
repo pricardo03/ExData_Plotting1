@@ -35,5 +35,5 @@ with(DataPeriod, {
 }) 
 
 #save into a png file from screen
-dev.copy(png, file="plot4.png", height=480, width=480)
+dev.copy(png, file="plot4.png", height=480, width=480, units = "px", bg = "transparent")
 dev.off()
