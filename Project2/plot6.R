@@ -1,5 +1,6 @@
 # Loads RDS
 library(ggplot2)
+require(dlpyr)
 
 NEI <- readRDS("data/summarySCC_PM25.rds")
 NEI$year <- factor(NEI$year, levels = c('1999', '2002', '2005', '2008'))
